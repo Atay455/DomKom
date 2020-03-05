@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "474326287113",
+    "firebase_url": "https://domkom-c380e.firebaseio.com",
+    "project_id": "domkom-c380e",
+    "storage_bucket": "domkom-c380e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474326287113:android:975ffa1845d7e8bf72c9d8",
+        "android_client_info": {
+          "package_name": "com.atay.kg.domkom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474326287113-o69q03tnqlhokrh63j8kd5jslcob1pgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.atay.kg.domkom",
+            "certificate_hash": "8ffd874189d9b516635052fb375abb4e7a4cb753"
+          }
+        },
+        {
+          "client_id": "474326287113-m64t8bs7ob2r7s63q97ao8j9rokhqu4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX7NEeXXP04m4sspUSWqDQgDxpesLmUgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474326287113-m64t8bs7ob2r7s63q97ao8j9rokhqu4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
