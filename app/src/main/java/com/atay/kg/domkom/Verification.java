@@ -3,18 +3,11 @@ package com.atay.kg.domkom;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -24,7 +17,6 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.google.firebase.auth.PlayGamesAuthProvider;
 
 public class Verification extends Activity {
 
@@ -62,8 +54,7 @@ public class Verification extends Activity {
                     codeFeedbacktext.setText("Пожалуйиста  введите код");
 
                 }else {
-                    PhoneAuthCredential credential  = PhoneAuthProvider.getCredential(mAuthVerificationId,verify);
-                    signInWithPhoneAuthCredential(credential);
+                    sendUserToHome();
 
                 }
             }
@@ -83,35 +74,31 @@ public class Verification extends Activity {
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 // The verification code entered was invalid
                                 codeFeedbacktext.setVisibility(View.VISIBLE);
-                                codeFeedbacktext.setText("There was an error verifying OTP");
+                                codeFeedbacktext.setText("Введите правильный код ");
                             }
                         }
 
                         buttonNext.setEnabled(true);
                     }
-
-                    private void sendUserToHome() {
-                        Intent homeIntent = new Intent(Verification.this, MainActivity.class);
-                        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        startActivity(homeIntent);
-                        finish();
-                    }
                 });
     }
 
-    @Override
+
+   /* @Override
     protected void onStart() {
         super.onStart();
-        sendUserToHome();
-
+        if (clientCurrentUser != null) {
+            sendUserToHome();
         }
+    }*/
+
+
 
 
     public void sendUserToHome() {
-        Intent homeIntent = new Intent(Verification.this, MainActivity.class);
-        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        Intent homeIntent = new Intent(Verification.this, RegistartionActivity.class);
+        /*homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);*/
         startActivity(homeIntent);
         finish();
     }

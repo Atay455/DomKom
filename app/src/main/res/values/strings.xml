@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name"></string>
     <string name="admin">Новости</string>
+    <string name="_996xxxxxxxxx">+996XXXXXXXXX</string>
+    <string name="ФИО">ФИО</string>
+    <string name="АдресДома">Адрес Дома</string>
+    <string name="Квартира">Квартира</string>
 </resources>

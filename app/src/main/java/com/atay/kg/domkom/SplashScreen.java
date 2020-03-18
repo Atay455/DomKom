@@ -1,7 +1,5 @@
 package com.atay.kg.domkom;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +15,7 @@ public class SplashScreen extends Activity {
             @Override
             public void run() {
 
-                final Intent main = new Intent(SplashScreen.this,Authetification.class);
+                final Intent main = new Intent(SplashScreen.this, Authenticating.class);
                     startActivity(main);
 
                     finish();

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -79,7 +82,7 @@
             android:layout_height="50dp"
             android:textColorHint="@drawable/transparent_hint"
             android:inputType="phone"
-            android:hint="+996XXXXXXXXX" />
+            android:hint="@string/_996xxxxxxxxx" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -96,3 +99,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonGetCode" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
