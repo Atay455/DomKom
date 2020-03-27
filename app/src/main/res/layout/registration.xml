@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
@@ -196,7 +197,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonownertype"
             android:layout_width="141dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
@@ -214,22 +215,19 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/buttonrentowner"
             android:layout_width="141dp"
             android:layout_height="40dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="240dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_round3"
             android:text="Арендатор"
             android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.913"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editcarnumark"
-            app:layout_constraintVertical_bias="0.066" />
+            app:layout_constraintVertical_bias="0.087" />
 
         <Button
             android:id="@+id/buttonext"
