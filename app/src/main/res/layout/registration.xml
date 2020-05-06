@@ -27,6 +27,7 @@
             app:layout_constraintVertical_bias="0.042">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ФИО" />
@@ -46,6 +47,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editNameSur">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edithomeaddresstext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/АдресДома" />
@@ -67,6 +69,7 @@
             app:layout_constraintVertical_bias="0.03">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editflattext"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/Квартира" />
@@ -89,6 +92,7 @@
             app:layout_constraintVertical_bias="0.03">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editfloortext"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:hint="Этаж" />
@@ -112,6 +116,7 @@
             app:layout_constraintVertical_bias="0.025">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editpeoplenumtext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Количество людей проживающих в квартире" />
@@ -155,6 +160,7 @@
             app:layout_constraintVertical_bias="0.0">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editcarnumarktext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Марка и номер" />
@@ -173,10 +179,10 @@
             android:text="Да"
             app:layout_constraintBottom_toTopOf="@+id/editcarnumark"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.614"
+            app:layout_constraintHorizontal_bias="0.662"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editpeoplenum"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/buttonno"
@@ -191,10 +197,10 @@
             android:textSize="10dp"
             app:layout_constraintBottom_toTopOf="@+id/editcarnumark"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.865"
+            app:layout_constraintHorizontal_bias="0.937"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editpeoplenum"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/buttonownertype"

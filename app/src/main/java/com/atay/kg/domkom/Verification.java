@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
-
+import com.google.firebase.auth.PhoneAuthProvider;
 
 
 public class Verification extends Activity {
@@ -54,7 +54,9 @@ public class Verification extends Activity {
                     codeFeedbacktext.setText("Пожалуйиста  введите код");
 
                 }else {
-                    sendUserToHome();
+
+                    PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mAuthVerificationId, verify);
+                    signInWithPhoneAuthCredential(credential);
 
                 }
             }
@@ -97,8 +99,8 @@ public class Verification extends Activity {
 
     public void sendUserToHome() {
         Intent homeIntent = new Intent(Verification.this, RegistartionActivity.class);
-        /*homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);*/
+        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(homeIntent);
         finish();
     }
