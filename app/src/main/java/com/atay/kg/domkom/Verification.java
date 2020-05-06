@@ -98,7 +98,7 @@ public class Verification extends Activity {
 
 
     public void sendUserToHome() {
-        Intent homeIntent = new Intent(Verification.this, RegistartionActivity.class);
+        Intent homeIntent = new Intent(Verification.this, MainActivity.class);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(homeIntent);
