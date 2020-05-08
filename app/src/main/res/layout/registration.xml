@@ -30,7 +30,7 @@
                 android:id="@+id/editName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/ФИО" />
+                android:hint="Name/surname" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -50,7 +50,7 @@
                 android:id="@+id/edithomeaddresstext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/АдресДома" />
+                android:hint="Home address" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -72,7 +72,7 @@
                 android:id="@+id/editflattext"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/Квартира" />
+                android:hint="Flat" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -95,7 +95,7 @@
                 android:id="@+id/editfloortext"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
-                android:hint="Этаж" />
+                android:hint="Floor" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -119,7 +119,7 @@
                 android:id="@+id/editpeoplenumtext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Количество людей проживающих в квартире" />
+                android:hint="People num in home" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -140,7 +140,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
-                android:hint="Наличие" />
+                android:hint="Car ?" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -163,7 +163,7 @@
                 android:id="@+id/editcarnumarktext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Марка и номер" />
+                android:hint="Cars num and mark" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -211,7 +211,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_round2"
-            android:text="Владелец квартиры"
+            android:text="Landloard"
             android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -228,7 +228,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_round3"
-            android:text="Арендатор"
+            android:text="Rent"
             android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -244,7 +244,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_round"
-            android:text="Далее"
+            android:text="Next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"

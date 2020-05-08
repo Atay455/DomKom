@@ -42,7 +42,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="ФИО" />
+            android:hint="Surname/name" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -60,7 +60,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Адрес Дома" />
+            android:hint="Home adress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -81,7 +81,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="135dp"
             android:layout_height="wrap_content"
-            android:hint="Квартира" />
+            android:hint="Flat" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -103,7 +103,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="135dp"
             android:layout_height="wrap_content"
-            android:hint="Этаж" />
+            android:hint="Floor" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -125,7 +125,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Количество людей проживающих в квартире"
+            android:hint="People num"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -147,7 +147,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="135dp"
             android:layout_height="wrap_content"
-            android:hint="Наличие" />
+            android:hint="Car ?" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -172,7 +172,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Марка" />
+            android:hint="Car num and mark" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -185,7 +185,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#1565C0"
-        android:text="Да"
+        android:text="YES"
         app:layout_constraintBottom_toTopOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.614"
@@ -202,7 +202,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#E5E5E5"
-        android:text="Нет"
+        android:text="No"
         android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="parent"

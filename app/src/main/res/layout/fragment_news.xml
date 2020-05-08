@@ -8,7 +8,7 @@
     android:theme="@style/AppTheme2">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/NEWSrecyclerView"
+        android:id="@+id/NewsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="674dp" />
 
