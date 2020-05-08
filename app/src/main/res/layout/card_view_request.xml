@@ -17,7 +17,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:textSize="16sp"
-        android:text="Заявка#1"
+        android:text="Request#1"
         />
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_marginTop="60dp"
         android:textColor="#000"
         android:textSize="20dp"
-        android:text="Ремонт"
+        android:text="Repair"
         android:layout_height="wrap_content"
         android:layout_marginLeft="140dp"/>
 
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
-        android:text="Тип заявки:"
+        android:text="Type of request:"
         android:textColor="#000"
         android:textSize="20dp" />
 
